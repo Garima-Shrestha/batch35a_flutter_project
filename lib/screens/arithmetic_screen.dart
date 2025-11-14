@@ -25,6 +25,7 @@ import 'package:flutter/material.dart';
 // 2. StatefulWidget : jati khera data/state change hunxa
 
 
+// stful
 class ArithmeticScreen extends StatefulWidget {
   const ArithmeticScreen({super.key});
 
@@ -141,3 +142,6 @@ class _ArithmeticScreenState extends State<ArithmeticScreen> {
 // 1. labelText: Displays a label above the TextField when it’s not focused.
 // 2. hintText: Provides a placeholder text inside the TextField when it’s empty.
 // 3. border: Defines the border style around the TextField.
+
+// To change from StatelessWidget to StatefulWidget press alt + enter, same for vice versa.
+// StatelessWidget has one class when we do stless, StatefulWidget has 2 class made when we do stful.
