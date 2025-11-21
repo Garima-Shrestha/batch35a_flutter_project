@@ -63,9 +63,19 @@ class _ArithmeticScreenState extends State<ArithmeticScreen> {
                 second = int.parse(value);
               },
               decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                ),
+                enabledBorder: OutlineInputBorder(   // when you do not click on the textfield
+                  borderSide: BorderSide(color: Colors.red),
+                  borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                ),
+                focusedBorder: OutlineInputBorder(        // when you click on the textfield
+                  borderSide: BorderSide(color: Colors.green),
+                  borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                ),
                 labelText: "Enter Second Number: ",
                 hintText: "Eg. 13",
-                border: OutlineInputBorder(),
               ),
             ),
             // Invisible box
