@@ -1,8 +1,10 @@
 //stless
 import 'package:flutter/material.dart';
 import 'package:flutter_project/screens/arithmetic_screen.dart';
+import 'package:flutter_project/screens/column_screen.dart';
 import 'package:flutter_project/screens/flutter_layout_screen.dart';
 import 'package:flutter_project/screens/rich_text_screen.dart';
+import 'package:flutter_project/screens/row_screen.dart';
 import 'package:flutter_project/screens/si_screen.dart';
 
 class App extends StatelessWidget {
@@ -14,7 +16,9 @@ class App extends StatelessWidget {
         // home: ArithmeticScreen(),
         // home: SimpleInterest(),
         // home: RichTextScreen(),
-      home: FlutterLayoutScreen(),
+      // home: FlutterLayoutScreen(),
+      // home: RowScreen(),
+      home: ColumnScreen(),
 
             debugShowCheckedModeBanner: false,    // debug banner hatauna
     );
