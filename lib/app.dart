@@ -17,8 +17,8 @@ class App extends StatelessWidget {
         // home: SimpleInterest(),
         // home: RichTextScreen(),
       // home: FlutterLayoutScreen(),
-      // home: RowScreen(),
-      home: ColumnScreen(),
+      home: RowScreen(),
+      // home: ColumnScreen(),
 
             debugShowCheckedModeBanner: false,    // debug banner hatauna
     );
