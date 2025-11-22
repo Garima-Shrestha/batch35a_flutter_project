@@ -28,6 +28,22 @@ class ColumnScreen extends StatelessWidget {
               Text("Second", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
               SizedBox(height: 16),
               Text("Third", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+
+              SizedBox(height: 16),
+              RichText(text: const TextSpan(
+                text: "Hello ",
+                style: TextStyle(color: Colors.purple, fontSize: 40),
+                children: <TextSpan>[
+                  TextSpan(
+                    text: "World",
+                    style: TextStyle(fontWeight: FontWeight.bold)
+                  ),
+                  TextSpan(
+                    text: "!!!",
+                      style: TextStyle(color: Colors.black)
+                  )
+                ]
+              ))
             ],
           ),
         ),
