@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_project/screens/arithmetic_screen.dart';
 import 'package:flutter_project/screens/column_screen.dart';
 import 'package:flutter_project/screens/container_screen.dart';
+import 'package:flutter_project/screens/custom_screen.dart';
 import 'package:flutter_project/screens/flexible_expanded_screen.dart';
 import 'package:flutter_project/screens/flutter_layout_screen.dart';
 import 'package:flutter_project/screens/image_view_screen.dart';
@@ -24,7 +25,8 @@ class App extends StatelessWidget {
       // home: ColumnScreen(),
       // home: ContainerScreen(),
       // home: ImageViewScreen(),
-      home: FlexibleExpandedScreen(),
+      // home: FlexibleExpandedScreen(),
+      home: CustomScreen(),
 
             debugShowCheckedModeBanner: false,    // debug banner hatauna
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project/common/my_snackbar.dart';
 
 class FlexibleExpandedScreen extends StatelessWidget {
   const FlexibleExpandedScreen({super.key});
@@ -11,7 +12,11 @@ class FlexibleExpandedScreen extends StatelessWidget {
         children: [
           Expanded(
             child: GestureDetector(
-              onTap: () => print("I am container one"),   // This is a function, container1 ma one choti tap garyo bhanye "Run" ma "I am container one" print hunxa.
+              // onTap: () => print("I am container one"),   // This is a function, container1 ma one choti tap garyo bhanye "Run" ma "I am container one" print hunxa.
+              onTap: () => showMySnackBar(  // One tap garye pachi screen ma I am container one with green background aaunxa. showMySnackBar import garyeko from file my_snackbar.dart.
+                  context: context,
+                  message: "I am container one"
+              ),
               child: Container (
                 width: double.infinity,
                 color: Colors.yellow,
@@ -32,7 +37,12 @@ class FlexibleExpandedScreen extends StatelessWidget {
           // ),
           Expanded(
             child: GestureDetector(
-              onDoubleTap: () => print("I am container two"),   // This is a function, container2 ma two choti tap garyo bhanye "Run" ma "I am container two" print hunxa.
+              // onDoubleTap: () => print("I am container two"),   // This is a function, container2 ma two choti tap garyo bhanye "Run" ma "I am container two" print hunxa.
+              onDoubleTap: () => showMySnackBar(  // One tap garye pachi screen ma I am container two with red background aaunxa. showMySnackBar import garyeko from file my_snackbar.dart.
+                  context: context,
+                  message: "I am container 2",
+                  color: Colors.red,
+                ),
               child: Container(
                 width: double.infinity,
                 color: Colors.green[400],
