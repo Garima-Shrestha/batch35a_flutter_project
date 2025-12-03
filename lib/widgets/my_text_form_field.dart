@@ -36,3 +36,9 @@ class MyTextFormField extends StatelessWidget {
     );
   }
 }
+
+// A custom wrapper around Flutter’s TextFormField that makes it easier to reuse the same style or validation logic everywhere.
+
+// TextFormField = built-in input widget.
+// MyTextFormField = your custom wrapper to reuse the same style/logic across the app.
+// A TextEditingController is the thing that lets you get, set, and control the text inside a TextField.

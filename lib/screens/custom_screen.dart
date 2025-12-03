@@ -85,3 +85,11 @@ class _CustomScreenState extends State<CustomScreen> {
     );
   }
 }
+
+
+// GlobalKey<FormState> lets you access the form’s state, validate it, save it, or reset it from outside the Form widget.
+// GlobalKey<FormState> can check the form, validate it, save it, or reset it, but only if it’s connected to a Form.
+// key: _formKey is the connection. You attach the GlobalKey to a specific Form widget.
+// key: _formKey links it to a specific Form so it knows where to apply.
+// if (_formKey.currentState!.validate()) => Check all the fields in this Form. If they all pass validation, do what’s inside the { ... } block.
+// if (_formKey.currentState!.validate()) => For eg, above if both the text field are correct then only do operation of the button when clicked.

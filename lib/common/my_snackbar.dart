@@ -14,3 +14,7 @@ showMySnackBar({
     )
   );
 }
+
+// small rectangle thing popping up at the bottom” is the SnackBar.
+// showMySnackBar() is just a helper function that triggers it.
+// BuildContext = a reference to the location of a widget in the widget tree.
